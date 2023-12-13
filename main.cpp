@@ -19,11 +19,16 @@ void imprimirEstudiantePorValor(struct Estudiante estudiante) {
     printf("Promedio: %.2f\n", estudiante.promedio);
     }
 
-void imprimirEstudiantePorReferencia(const struct Estudiante *estudiante) {
+void imprimirEstudiantePorReferencia(const struct Estudiante estudiante) {
     printf("Nombre: %s\n", estudiante->nombre);
     printf("Edad: %d\n", estudiante->edad);
     printf("Promedio: %.2f\n", estudiante->promedio);
     }
+void imprimirEstudiantePorDireccion(const struct Estudiante estudiante) {
+    printf("Nombre: %s\n", estudiante->nombre);
+    printf("Edad: %d\n", estudiante->edad);
+    printf("Promedio: %.2f\n", estudiante->promedio);
+}
 int main() {
     // b. Instanciación de la estructura Estudiante y asignación de valores
     struct Estudiante estudiante1;
@@ -129,6 +134,7 @@ int main() {
 
     imprimirEstudiantePorValor(estudiante1);
     imprimirEstudiantePorReferencia(estudiante1);
-
+    imprimirEstudiantePorDireccion(estudiante1);
+    
     return 0;
 }
