@@ -102,5 +102,22 @@ int main() {
     // Liberar memoria asignada con malloc
     liberarEstudiante(estudiante2);
 
+    struct Estudiante copiaEstudiante1 = copiarEstudiante(&estudiante1);
+
+    // Mostrar los datos originales y la copia
+    printf("Datos originales:\n");
+    printf("Nombre: %s\n", estudiante1.nombre);
+    printf("Edad: %d\n", estudiante1.edad);
+    printf("Promedio: %.2f\n\n", estudiante1.promedio);
+
+    printf("Copia de los datos:\n");
+    printf("Nombre: %s\n", copiaEstudiante1.nombre);
+    printf("Edad: %d\n", copiaEstudiante1.edad);
+    printf("Promedio: %.2f\n", copiaEstudiante1.promedio);
+
+    liberarEstudiante(estudiante2);
+
+
+
     return 0;
 }
