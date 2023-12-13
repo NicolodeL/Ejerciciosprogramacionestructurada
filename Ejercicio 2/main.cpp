@@ -16,13 +16,13 @@ int main() {
     union MiUnion miVariable;
 
     // Asignar diferentes tipos de valores y ver cómo se comporta
-    miVariable.entero = 42;
+    miVariable.entero = 54;
     printf("Entero: %d\n", miVariable.entero);
 
-    miVariable.flotante = 3.14;
+    miVariable.flotante = 5.123;
     printf("Flotante: %.2f\n", miVariable.flotante);
 
-    strcpy(miVariable.cadena, "Hola, mundo!");
+    strcpy(miVariable.cadena, "Hola, todo bien?");
     printf("Cadena: %s\n", miVariable.cadena);
 
     return 0;
