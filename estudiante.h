@@ -9,7 +9,9 @@ struct Estudiante {
 };
 
 // Prototipos de funciones
-struct Estudiante *crearEstudiante(const char *nombre, int edad, float promedio);
-void liberarEstudiante(struct Estudiante *estudiante);
+void instanciacionYAsignacion();
+void agregarEstudiante(struct Estudiante lista[], int *numEstudiantes);
+void verEstudiantes(struct Estudiante lista[], int numEstudiantes);
+void eliminarEstudiante(struct Estudiante lista[], int *numEstudiantes);
 
 #endif

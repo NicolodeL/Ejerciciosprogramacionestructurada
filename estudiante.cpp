@@ -3,6 +3,11 @@
 #include <iostream>
 #include <cstring>
 
+void Estudiante::imprimirEstudiante() const {
+    std::cout << "Nombre: " << nombre << "\n";
+    std::cout << "Edad: " << edad << "\n";
+    std::cout << "Promedio: " << promedio << "\n";
+}
 // Función para crear un estudiante y asignarle valores
 struct Estudiante *crearEstudiante(const char *nombre, int edad, float promedio) {
     struct Estudiante *nuevoEstudiante = new struct Estudiante;
