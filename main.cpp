@@ -12,11 +12,11 @@ struct Estudiante copiarEstudiante(const struct Estudiante *original) {
 
     return copia;
 }
-void imprimirEstudiantePorValor(struct Estudiante estudiante) {
+void imprimirEstudiante(struct Estudiante estudiante) {
     printf("Nombre: %s\n", estudiante.nombre);
     printf("Edad: %d\n", estudiante.edad);
     printf("Promedio: %.2f\n", estudiante.promedio);
-
+    }
 
 int main() {
     // b. Instanciación de la estructura Estudiante y asignación de valores
@@ -104,7 +104,6 @@ int main() {
     } while (opcion != 4);
 
     // Liberar memoria asignada con malloc
-    liberarEstudiante(estudiante2);
 
     struct Estudiante copiaEstudiante1 = copiarEstudiante(&estudiante1);
 
@@ -121,9 +120,7 @@ int main() {
 
     liberarEstudiante(estudiante2);
 
-    void imprimirEstudiante(Estudiante est) {
-        printf("Nombre: %s, Edad: %d, Promedio: %.2f\n", est.nombre, est.edad, est.promedio);
-    }
+
     imprimirEstudiante(estudiante1);
 
     return 0;
