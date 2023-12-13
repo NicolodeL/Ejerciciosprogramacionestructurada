@@ -15,4 +15,4 @@ void agregarEstudiante(struct Estudiante lista[], int *numEstudiantes);
 void verEstudiantes(struct Estudiante lista[], int numEstudiantes);
 void eliminarEstudiante(struct Estudiante lista[], int *numEstudiantes);
 
-// Definimos los seiguientes datos de la estrucura, nombre, edad y promedio
+// Definimos los siguientes datos de la estrucura, nombre, edad y promedio en el main.cpp
