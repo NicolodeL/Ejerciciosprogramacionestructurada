@@ -1,6 +1,7 @@
 #include "estudiante.h"
 #include <iostream>
 #include <cstring>
+#include <stdio.h>
 #include <string>
 struct Estudiante copiarEstudiante(const struct Estudiante *original) {
     struct Estudiante copia;
@@ -22,7 +23,7 @@ void imprimirEstudiantePorReferencia(const struct Estudiante *estudiante) {
     printf("Nombre: %s\n", estudiante->nombre);
     printf("Edad: %d\n", estudiante->edad);
     printf("Promedio: %.2f\n", estudiante->promedio);
-
+    }
 int main() {
     // b. Instanciación de la estructura Estudiante y asignación de valores
     struct Estudiante estudiante1;
@@ -127,6 +128,7 @@ int main() {
 
 
     imprimirEstudiantePorValor(estudiante1);
+    imprimirEstudiantePorReferencia(estudiante1);
 
     return 0;
 }
