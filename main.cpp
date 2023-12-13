@@ -31,7 +31,7 @@ int main() {
     // Crear una lista de estudiantes
     struct Estudiante listaEstudiantes[100];
     int numEstudiantes = 0;
-
+    typedef struct Estudiante EstudianteAlias;
     // Menú de la aplicación
     int opcion;
     do {
